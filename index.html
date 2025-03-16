@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0d0d0d;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 1000px;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .intro {
+            text-align: center;
+        }
+        .intro h1 {
+            font-size: 2.5em;
+            color: #f4c542;
+        }
+        .intro p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        .profile-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .profile-img img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1a1a1a;
+            padding: 15px 20px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        .navbar .name {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #f4c542;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        .navbar ul li a:hover {
+            color: #f4c542;
+        }
+        .popover {
+            display: none;
+            position: absolute;
+            background: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+        }
+        .navbar ul li:hover .popover {
+            display: block;
+        }
+        .projects, .skills, .about, .contact {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .projects h2, .skills h2, .about h2, .contact h2 {
+            color: #f4c542;
+            font-size: 2em;
+        }
+        .projects ul, .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="name">Abhay Dwivedi</div>
+        <ul>
+            <li><a href="main.html">Home</a><div class="popover">Go to Home</div></li>
+            <li><a href="projects">Projects</a><div class="popover">See my work</div></li>
+            <li><a href="skills">Skills</a><div class="popover">My expertise</div></li>
+            <li><a href="about">About</a><div class="popover">Know more about me</div></li>
+            <li><a href="contact">Contact</a><div class="popover">Get in touch</div></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="intro">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello! I'm Abhay Dwivedi, a passionate Web Developer who loves creating amazing things. Explore my work and get to know more about me!</p>
+        </div>
+        <div class="profile-img">
+            <img src="Abhay dwivedi.png" alt="Your Image">
+        </div>
+    </div>
+    <div class="projects" id="projects">
+        <h2>My Projects</h2>
+        <ul>
+            <li><a href="#">Project 1 - Web Design</a></li>
+            <li><a href="#">Project 2 - AI Application</a></li>
+            <li><a href="#">Project 3 - Mobile App</a></li>
+        </ul>
+    </div>
+    <div class="skills" id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>React</li>
+        </ul>
+    </div>
+    <div class="about" id="about">
+        <h2>About Me</h2>
+        <p>I am Abhay Dwivedi, a dedicated Web developer with a passion for creating intuitive and engaging digital experiences. With experience in web development, AI applications, and mobile app design, I strive to bring innovative ideas to life.</p>
+    </div>
+    <div class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: ad302690812@gmail.com</p>
+        <p>Phone: 6232391718</p>
+        <p>LinkedIn: <a href="#" style="color: #f4c542; text-decoration: none;">https://www.linkedin.com/in/abhay-dwivedi-989344287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app</a></p>
+        <p>GitHub: <a href="#" style="color: #f4c542; text-decoration: none;">https://github.com/Abhay94-fn</a></p>
+    </div>
+</body>
+</html>
